@@ -1,0 +1,53 @@
+A: Nice job overall. A few limitations noted below.
+
+## ease of accessing package, help, tests:
+
+Good.
+
+## main help page (select):
+
+Good description of arguments and output. No description of algorithm used.
+A couple simulated examples, one somewhat large.
+
+## quality of user interface (function arguments, flexibility):
+
+Various user options. Good use of a default for population size.
+Not clear to me how objective_fun works, given that in eval_fit(), you don't pass the data into the function.
+
+## performance on my tests:
+
+performance on baseball known: good - found best model
+performance on baseball full: good - found a competitive model though not as good as best I found
+performance on big-p: ok, but not particularly close to the true model.
+
+## testing
+
+Tests pass.
+
+Good set of tests: Various unit tests of correctness. Overall tests of performance on datasets. Testing that all true predictors are in the found model seems asymmetric - would be good to also report if your algorithm found the true model and, if not, how far away the true model is in terms of AIC.
+
+## writeup (including examples):
+
+Clear. Good description of examples, though would have been nice to have a real data example.
+
+## code efficiency
+
+Seems good for small cases. Slow for my large test case.
+
+## code organization/clarity/elegance:
+
+Good - easy to follow, fairly concise.
+
+Should be able to vectorize select_parents to avoid the loop in there.
+
+## code comments/formatting:
+
+Good.
+
+## parallelization:
+
+None
+
+## equality of workload:
+
+Fine, though it seems a bit imbalanced.

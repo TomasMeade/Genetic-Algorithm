@@ -1,0 +1,22 @@
+Package: GA
+Title: Use a Genetic Algorithm to Select GLM Variables
+Version: 1.0.0
+Authors@R: c(
+    person("Angela", "Song", email = "angela_song@berkeley.edu", role = c("aut", "cre")),
+    person("Khachatur", "Mirijanyan", role = c("aut")),
+    person("Tomas", "Meade", role = c("aut")))
+Description: Uses a basic genetic algorithm to select variables for a GLM.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+Imports:
+    MASS,
+    assertthat,
+    stats
+Depends:
+    R (>= 2.10)
